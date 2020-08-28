@@ -1,0 +1,454 @@
+@charset "utf-8";
+@import "common.css";
+@import "media.css";
+
+/*-------------------------------------------------------- VISUAL ----------------------------------------------------------*/
+.main_visual_wrap {height: 100%;}
+.main_visual_area {position: relative; width: 100%; height: 100%; overflow: hidden;}
+
+#main_v_slide {position: absolute; top: 0; left: 0%; width: 400%; height: 100%; background-color: #000;}
+.main_v_slide_bg {width: 25%; height: 100%; background: no-repeat center/cover; float: left; color: #fff;}
+
+.main_v_slide_bg.mbg1 {background-image: url(../images/main_visual_1.jpg);}
+.main_v_slide_bg.mbg2 {background-image: url(../images/main_visual_2.jpg);}
+.main_v_slide_bg.mbg3 {background-image: url(../images/main_visual_3.jpg);}
+.main_v_slide_bg.mbg4 {background-image: url(../images/main_visual_4.jpg);}
+
+.main_v_text_box.first {margin: 300px 0 0 230px;}
+.main_v_text_box.first > .main_v_stit {margin-bottom: 40px;}
+
+.main_v_stit > span {display: inline-block; width: 82px; height: 2px; background-color: rgba(255, 255, 255, 0.2); vertical-align: 5px; margin-right: 20px;}
+.main_v_text_box.first > .main_v_tit {margin-top: 10px; font-weight: 100; font-family: 'Noto Sans KR', sans-serif;}
+.main_v_text_box.first > .main_v_tit > .color_red {font-weight: 900; font-family: 'Noto Sans KR', sans-serif; margin-bottom: 0;}
+.main_v_text_box.first > .main_v_txt {margin-top: 50px;}
+
+.main_v_text_box {margin: 250px 0 0 230px;}
+.main_v_stit {color: #999; font-family: 'Krona One', sans-serif; font-family: 'Krona One', sans-serif;}
+.main_v_tit {margin-top: 40px; font-size: 3.75rem; font-family: 'Krona One', sans-serif;}
+
+.main_v_tit.effect, .main_v_logo.effect {animation-name: mainVisualTitleAnimation; animation-timing-function: ease-out; animation-duration: 1s; animation-fill-mode: forwards; opacity: 0;}
+
+@keyframes mainVisualTitleAnimation {
+    0% {transform: translateY(-50%); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+
+.main_v_tit > .color_red {font-size: 3.75rem; font-family: 'Krona One', sans-serif; margin-bottom: 15px;}
+.main_v_txt {margin: 40px 0; line-height: 1.5rem; font-weight: 300;}
+
+.main_v_txt.effect {animation-name: mainVisualTextAnimation; animation-timing-function: ease-out; animation-duration: 2s; animation-fill-mode: forwards; animation-delay: 1s; opacity: 0;}
+
+@keyframes mainVisualTextAnimation {
+    0% {transform: translateX(10%); opacity: 0;}
+    100% {transform: translateX(0); opacity: 1;}
+}
+
+.main_v_text_box > .btn_more.effect {animation-name: mainVisualButtonAnimation; animation-timing-function: ease-out; animation-duration: 2s; animation-fill-mode: forwards; animation-delay: 2s; opacity: 0;}
+
+@keyframes mainVisualButtonAnimation {
+    0% {transform: translateY(50%); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+
+.main_v_paging_wrap {position: absolute; right: 60px; bottom: 60px;}
+#main_v_paging_num {font-family: 'Krona One', sans-serif; font-size: 22.5rem; color: rgba(255, 255, 255, 0.02); -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);}
+
+#main_v_paging_list {position: absolute; right: 40px; bottom: -10px;}
+#main_v_paging_list > li {float: left; margin-left: 50px;}
+#main_v_paging_list > li > a {font-family: 'Krona One', sans-serif; font-size: 1.875rem; z-index: 10;}
+
+
+
+/*-------------------------------------------------------- CONTENTS 01 : What We Do ----------------------------------------------------------*/
+
+.main_con_wrap {position: relative;}
+#con_1 {position: relative; height: 923px; padding-top: 190px; z-index: 10;}
+
+.main_con_title {font-family: 'Krona One', sans-serif; font-size: 3rem; letter-spacing: -2px;}
+
+.wwd_line1, .main_con_txt, .history_box {transform: translateX(-100px); opacity: 0; transition: 1s;}
+.wwd_line1.effect, .main_con_txt.effect, .history_box.effect {opacity: 1; transform: translateX(0);}
+
+.wwd_line1 {margin-left: 200px;}
+.wwd_line2 {margin-left: 108px; margin-bottom: 66px;}
+
+.main_con_txt {color: #666; line-height: 2.25rem; letter-spacing: -0.5px;}
+
+.history_box {position: relative; margin-top: 40px;}
+.history_box div {font-family: 'Krona One', sans-serif; letter-spacing: -0.6px;}
+
+.cpn_name {font-size: 0.875rem; line-height: 1.5rem;}
+
+.history {color: #d2d2d2; font-size: 0.75rem; line-height: 1.5rem;}
+.history_line {position: absolute; left: 124px; top: 10px;}
+
+.line {display: inline-block; width: 50px; height: 2px; background-color: #ccc;}
+.circle {display: inline-block; width: 8px; height: 8px; background-color: #666; border-radius: 50%; vertical-align: -3px; margin-left: 3px;}
+
+.history_year {display: inline-block; font-size: 6.25rem; margin-top: 20px;}
+.history_text {display: inline-block; font-size: 1.125rem; vertical-align: 22px;}
+
+.wwd_bg_wrap {position: absolute; top: 50%; right: 0; transform: translateY(-50%); width: 54%; background-color: #eee;}
+.wwd_bg {left: 98px; right: 98px; top: 98px; bottom: 98px; background: url(../images/wwd_bg.jpg) no-repeat center/100%;}
+
+
+/*-------------------------------------------------------- CONTENTS 02 : New Branding Agency ----------------------------------------------------------*/
+
+#con_2 {height: 722px;}
+
+.line_box, .main_con_title.con2{transform: translateX(-100px); opacity: 0; transition: 1s;}
+.line_box.effect, .main_con_title.con2.effect{opacity: 1; transform: translateX(0);}
+
+.line_box {margin: 20px 0 0 40px;}
+.line_box > .circle {vertical-align: 1px;}
+.line_box > .line {vertical-align: 4px;}
+
+.main_con_s_title {color: #aaa; font-family: 'Krona One', sans-serif; font-size: 0.75rem;}
+
+.main_con_title.con2 {margin: 35px 0 72px 0;}
+
+.branding_list {display: flex;}
+.branding {width: 33.33%; height: 419px; text-align: center;}
+
+.branding.media, .branding.digital, .branding.mcomm {transform: translateY(-100px); opacity: 0; transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1.000);}
+.branding.media.effect, .branding.digital.effect, .branding.mcomm.effect {opacity: 1; transform: translateY(0);}
+
+.branding.digital {background-color: #eee;}
+.branding_icon {margin: 80px 0 40px 0;}
+.branding_title {font-size: 1.5rem; letter-spacing: -0.6px; font-weight: 700; line-height: 1.875rem;}
+.branding_s_title {font-family: 'Krona One', sans-serif; font-size: 1.125rem; letter-spacing: -0.8px; font-weight: 700; line-height: 1.875rem; color: #e41d30; margin-bottom: 20px;}
+.branding_txt {color: #666; letter-spacing: -0.6px; line-height: 1.5rem;}
+
+
+
+/*-------------------------------------------------------- CONTENTS 03 : Business Area ----------------------------------------------------------*/
+.main_con_wrap{background-color: #f9f9f9; transition: .4s;}
+.main_con_wrap.black{background-color: #000;}
+
+.ba_wrap {position: relative; height: 1000px;}
+.ba_wrap::before {content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 60%; background-color: #eee; transition: .4s;}
+.ba_wrap.black::before {background-color: #191919;}
+
+.ba_img_wrap {position: absolute; top: 50%; left: 30%; width: 406px; height: 735px; transform: translateY(-50%); background: url(../images/ba_bg.jpg) no-repeat center/cover;}
+
+.ba_line_box {position: absolute; top: 91px; left: 350px; width: 120px; z-index: 1;}
+.ba_line_box.black > * {background-color: #fff;}
+.ba_line_box > span {background-color: #000;}
+.ba_line_box > .line {width: 100px; margin-left: 5px;}
+
+.bg_text_box {position: absolute; left: 476px; top: 81px;}
+.bg_text_box > .main_con_title.black{color: #fff;}
+.ba_s_title {display: block; margin: 20px 0;}
+.ba_s_title.black {color: #fff;}
+.ba_txt {width: 290px; color: #666; line-height: 1.875rem; letter-spacing: -0.6px; margin-bottom: 20px;}
+
+.btn_more.black {color: #000;}
+.btn_more.black > span {background-color: #000; color: #fff;}
+
+.ba_list_wrap {height: 860px; background: url(../images/ba_list_bg.jpg) no-repeat bottom/cover;}
+.ba_list {display: flex; height: 100%; flex-wrap: wrap; align-content: space-between; text-align: center; padding: 120px 0;}
+.ba_list > li {width: 25%; transform: translateY(-100px); opacity: 0; transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1.000);}
+.ba_list > li.effect {opacity: 1; transform: translateY(0);}
+.ba_list_title {font-family: 'Krona One', sans-serif; color: #fff; font-size: 1.5rem; margin: 50px 0 20px 0; white-space: nowrap;}
+.ba_list_txt {color: #fff; line-height: 1.4;}
+
+
+
+/*-------------------------------------------------------- CONTENTS 04 : CREATIVE PROJECT ----------------------------------------------------------*/
+
+#con_4 {padding: 300px 0 150px 0;}
+#con_4 > .inbox {height: auto;}
+.line_box.con4, .main_con_title.con4 {margin: 0 0 20px 40px; transform: translateX(-100px); opacity: 0; transition: 1s;}
+.line_box.con4.effect, .main_con_title.con4.effect {opacity: 1; transform: translateX(0);}
+
+.cr_list_wrap{position: relative; height: 642px; margin-top: 60px;}
+.cr_list {display: flex; justify-content: space-between; width: 100%; height: 100%; transition: all 1s ease-in-out;}
+
+.cr_list.effect{width: 0;}
+.cr_list.effect > li > a{opacity: 0;}
+
+.cr_list > li {margin-top: -100px;/*transform: translateY(-100px);*/ opacity: 0; transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1.000);}/* 이펙트 추가 */
+.cr_list > li.effect{opacity: 1; margin-top: 0;/*transform: translateY(0);*/}/* 이펙트 추가 */
+
+.cr_list > li {width: 32%; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.cr_list > li > a {display: flex; align-items: center; justify-content: center; height: 100%; text-align: center; opacity: 1; transition: all 1s ease-in-out;}
+.cr_list_title {display: block; font-family: 'Krona One', sans-serif; font-size: 3rem; letter-spacing: -0.6px;}
+.cr_list_title > small {display: block; font-family: 'Krona One', sans-serif; font-size: 1.5rem; margin-bottom: 15px;}
+
+.cr_pc {background-image: url(../images/cr_list_bg_1.jpg);}
+.cr_app {background-image: url(../images/cr_list_bg_2.jpg);}
+.cr_mkt {background-image: url(../images/cr_list_bg_3.jpg);}
+
+.cr_pjv_wrap{position: absolute; left: 50%; top: 0; width: 0; height: 0; overflow: hidden; transform: translate(-50%); opacity: 0; transition: all 1s ease-in-out;}
+.cr_pjv_wrap.effect{transform: translateX(-50%); opacity: 1; height: 642px; width: 100%;}
+
+
+/* PC Project View */
+.cr_pjv{position: absolute; left: 0; top: 0; display: flex; width: 300%; height: 100%; background-color: #f9f9f9; opacity: 1;}
+.cr_pjv_bg{position: relative; width: 33.33%; height: 100%; background-repeat: no-repeat; background-size: 100% 642px;}
+.cr_pjv_bg.pc1{background-image: url(../images/cr_pjv_pc_bg1.png);}
+.cr_pjv_bg.pc2{background-image: url(../images/cr_pjv_pc_bg2.png);}
+.cr_pjv_bg.pc3{background-image: url(../images/cr_pjv_pc_bg3.png);}
+
+.cr_pjv_img{position: absolute; top: 80px; left: 140px;}
+.cr_pjv_img.effect{animation: crPjvImgAnimation 1s ease-out .5s forwards; opacity: 0;}
+.cr_pjv_img.f_effect{animation: crPjvImgAnimation 1s ease-out 1s forwards; opacity: 0;}
+
+@keyframes crPjvImgAnimation {
+    0% {transform: translateX(10%); opacity: 0;}
+    100% {transform: translateX(0); opacity: 1;}
+}
+
+.cr_pjv_shadow{position: absolute; top: 118px; left: 1269px;}
+
+.cr_pjv_text_box{position: absolute; top: 130px; left: 1320px; z-index: 10;}
+.cr_pjv_text_box.effect{animation: crPjvTextAnimation 1s ease-out 1s forwards; opacity: 0;}
+.cr_pjv_text_box.f_effect{animation: crPjvTextAnimation 1s ease-out 1.5s forwards; opacity: 0;}
+
+@keyframes crPjvTextAnimation {
+    0% {transform: translateY(-10%); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+
+.cr_pjv_tit{font-size: 2rem; line-height: 3rem; letter-spacing: -0.6px;}
+.cr_pjv_red_line{display: block; background-color: #e41d30; width: 75px; height: 7px; margin: 30px 0;}
+.cr_pjv_stit{font-family: 'Krona One', sans-serif; font-size: 1.125rem; letter-spacing: -0.6px; margin-bottom: 30px; font-weight: 300;}
+.cr_pjv_txt{color: #666; line-height: 1.5rem; margin-bottom: 30px;}
+
+
+.cr_paging_wrap {position: absolute; right: 60px; bottom: 60px;}
+.cr_paging_num {font-family: 'Krona One', sans-serif; font-size: 22.5rem; color: rgba(0, 0, 0, 0.05);}
+
+.cr_paging_list {position: absolute; right: 40px; bottom: -10px;}
+.cr_paging_list > li {float: left; margin-left: 50px;}
+.cr_paging_list > li > a {font-family: 'Krona One', sans-serif; font-size: 1.875rem; z-index: 10; color: #000;}
+
+
+/* App Project View */
+.cr_pjv.app > .cr_pjv_bg{background-image: none; overflow: hidden;}
+.cr_pjv.app .cr_pjv_tit, .cr_pjv.app .cr_pjv_stit{color:#fff;}
+.cr_pjv.app .cr_pjv_txt{color: #ccc;}
+.cr_pjv.app .cr_pjv_img{top: -100px; left: -100px;}
+
+.cr_pjv.app .cr_pjv_bg.app1{ background-color: #361d5f;}
+.cr_pjv.app .cr_pjv_bg.app2{ background-color: #c80551;}
+.cr_pjv.app .cr_pjv_bg.app3{ background-color: #5f7b00;}
+.cr_pjv_bg.app3 > .cr_pjv_img{left: -170px;}
+
+.cr_pjv_wrap.app .cr_paging_num{color: rgba(255, 255, 255, 0.05);}
+.cr_pjv_wrap.app #btn_cr_prev{color: #fff;}
+.cr_pjv_wrap.app #btn_cr_next{color: #fff;}
+
+.cr_pjv_wrap.app .btn_close{color: #fff;}
+.cr_pjv_wrap.app .btn_close:hover{color: #e41d30;}
+
+
+/* Marketing Project View */
+.cr_pjv.mkt > .cr_pjv_bg{background-image: linear-gradient(90deg, #eaeaea 50%, #f9f9f9 70%); overflow: hidden;}
+.cr_pjv.mkt .cr_pjv_img{top: 10px; left: 150px;}
+.cr_pjv.mkt .cr_pjv_shadow{left: 1200px;}
+.cr_pjv.mkt .cr_pjv_text_box{left: 1260px;}
+
+
+/*------------------------------------------------- CONTENTS 05 : YOUR SUCCESSFUL, OUR REPUTATION ---------------------------------------------------*/
+
+#con_5 {position: relative; padding: 150px 0 250px 0;}
+.line_box.con5 {margin-bottom: 20px;}
+
+.line_box.con5, .main_con_title.con5 {transform: translateX(-100px); opacity: 0; transition: 1s;}
+.line_box.con5.effect, .main_con_title.con5.effect {opacity: 1; transform: translateX(0);}
+
+.ysor_line2 {margin: 10px 0 0 200px;}
+
+.ysor_list_wrap {overflow: hidden; margin-top: 60px; height: 534px;}
+.ysor_list_area{position: relative; top:0;}
+
+.ysor_list {display: flex; flex-wrap: wrap; justify-content: space-between; perspective: 800px; perspective-origin: top;}
+.ysor_list > li {width: 23.875%; height: 163px; background-color: #f1f1f1; margin-top: 15px; display: flex; justify-content: center; align-items: center;
+opacity: 0;}
+.ysor_list > .ysorAni{animation-name: ysorListAnimation; animation-timing-function: ease-out; animation-duration: 1.5s; animation-fill-mode: forwards; opacity: 0;}
+
+@keyframes ysorListAnimation {
+    0% {transform-origin: top; transform: rotateX(120deg); opacity: 0;}
+    100% {transform-origin: top; transform: rotateX(0); opacity: 1;}
+}
+
+
+.btn_vtc_prev {position: absolute; top: 320px; right: 0; background-color: #000;}
+.tri {position: absolute; top: 0; right: 0; width: 0; height: 0; border-top: 0; border-bottom: 31px solid rgba(0, 0, 0, 1); border-right: 25px solid transparent; border-left: 25px solid transparent;}
+.tri.op20 {top: -14px; border-bottom: 31px solid rgba(0, 0, 0, 0.2); opacity: 0;}
+.tri.op10 {top: -28px; border-bottom: 31px solid rgba(0, 0, 0, 0.1); opacity: 0;}
+
+.btn_vtc_next {position: absolute; bottom: 214px; right: 0;}
+.btn_vtc_next > .tri {position: absolute; top: 0; right: 0; width: 0; height: 0; border-top: 31px solid rgba(0, 0, 0, 1); border-bottom: 0; border-right: 25px solid transparent; border-left: 25px solid transparent;}
+.btn_vtc_next > .tri.op20 {top: 14px; border-top: 31px solid rgba(0, 0, 0, 0.2);}
+.btn_vtc_next > .tri.op10 {top: 28px; border-top: 31px solid rgba(0, 0, 0, 0.1);}
+
+.btn_facebook {margin-top: 20px;}
+
+.btn_vtc_prev:hover .tri{animation: triPrevAnimation 1s ease-out 1s infinite alternate;}
+.btn_vtc_prev:hover .tri.op20{animation: triAnimation 1s ease-out .3s infinite alternate;}
+.btn_vtc_prev:hover .tri.op10{animation: triAnimation 1s ease-out .5s infinite alternate;}
+
+.btn_vtc_next:hover .tri{animation: triNextAnimation 1s ease-out 1s infinite alternate;}
+.btn_vtc_next:hover .tri.op20{animation: triAnimation 1s ease-out .3s infinite alternate;}
+.btn_vtc_next:hover .tri.op10{animation: triAnimation 1s ease-out .5s infinite alternate;}
+
+
+@keyframes triPrevAnimation {
+    0% {opacity: 1; transform: translateY(0);}
+    100% {opacity: 0; transform: translateY(50%);}
+}
+@keyframes triNextAnimation {
+    0% {opacity: 1; transform: translateY(0);}
+    100% {opacity: 0; transform: translateY(-50%);}
+}
+@keyframes triAnimation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+
+/************************************************************* MEDIA *************************************************************/
+
+
+@media only screen and (max-width:1280px) {
+
+    .line_box, .line_box.con4{margin-left: 15%;}
+     .main_con_title.con2, #con_4 .main_con_title, #con_5 .main_con_title{margin-left: 10%;}
+    
+    /* VISUAL */
+    .main_v_text_box.first{margin-left: 150px;}
+    .main_v_text_box{margin-left: 150px;}
+        
+    
+    /* CONTENTS 01 : WHAT WE DO */
+    .main_con_text_box{margin-left: 50px;}    
+    .wwd_bg.ibx{left: 60px; right: 60px; top: 60px; bottom: 60px;}       
+  
+    /* CONTENTS 03 : BUSINESS AREA */
+    .ba_img_wrap{left:20%;}
+    .ba_list_title{font-size: 1.25rem;}
+    .ba_list_txt{font-size: .875rem;}
+    
+    /* CONTENTS 04 : CREATIVE PROJECT */
+    .cr_list_wrap{height: 500px;}
+    .cr_list_title {font-size: 2.1875rem;}
+    .cr_list_title > small {font-size: 1rem;}
+    
+    .cr_pjv_wrap.effect{height: 500px;}
+    .cr_pjv_tit{font-size: 1.5rem; line-height: 2rem;}
+    .cr_pjv_stit{font-size: 1rem;}
+    .cr_pjv_txt{font-size: 0.875rem; line-height: 1.2rem;}
+    
+    .cr_paging_num{font-size: 9rem;}
+    .cr_paging_list{bottom: -30px;}
+    .cr_pjv .cr_pjv_shadow{left: 70%; top: 50%; transform: translateY(-50%); height: 70%;}
+    .cr_pjv .cr_pjv_text_box{left: 75%; top: 70px; height: 70%;}
+    
+    /* 04 : pc */
+    .cr_pjv.pc .cr_pjv_img{top: 90px; left: 0; width: 70%;}
+    
+    /* 04 : app */
+    .cr_pjv.app .cr_pjv_img{top: -64px; left: -140px; width: 90%;}
+    .cr_pjv_bg.app2 .cr_pjv_img{top: -38px;} 
+    
+    /* 04 : marketing */
+    .cr_pjv.mkt .cr_pjv_img{top: 22px; left: 41px; width: 60%;}
+    .cr_pjv_bg.mkt3 .cr_pjv_img{top: 22px; left: 15px; width: 60%;}
+    .cr_pjv.mkt .cr_pjv_shadow{left: 60%; top: 50%; transform: translateY(-50%); height: 70%;}
+    .cr_pjv.mkt .cr_pjv_text_box{left: 65%; top: 70px; height: 70%;}
+
+    
+
+    /* CONTENTS 05 : YOUR SUCCESSFUL, OUR REPUTATION */
+    .ysor_line2{margin-left: 250px;}    
+    .ysor_list_wrap{padding: 0 50px;}    
+    .btn_vtc_prev,#con_5 .btn_vtc_next{right: 50px;}
+
+
+}
+
+@media only screen and (max-width:960px) {
+
+    html,body{font-size: 15px;}
+    
+    /* CONTENTS 01 : WHAT WE DO */
+    .wwd_line1, .wwd_line2 {margin-left: 50px;}
+    .wwd_bg_wrap{position: static; width: 100%;}
+    
+    /* CONTENTS 03 : BUSINESS AREA */
+    .ba_wrap::before{opacity: 0;}
+    .ba_img_wrap {left: 0%; width: 100%; height: 508px;}
+    .ba_line_box {top: 16%; left: 5%;}
+    .bg_text_box {top: 23%; left: 5%;}
+
+    .ba_list_title{font-size: 1.25rem;}
+    .ba_list_txt{font-size: .875rem;}
+    
+    .ba_list_wrap{height: 1300px;}
+    .ba_list > li {width: 50%; margin-bottom: 50px;}
+    .ba_list_title {font-size: 1.5rem; margin-top: 20px;}
+    .ba_list_txt{font-size: 1rem;}
+    
+}
+
+
+@media only screen and (max-width:800px) { 
+        
+    /* VISUAL */
+    .main_v_text_box.first, .main_v_slide_bg .main_v_text_box{margin: 45% 0 0 5%;}
+    .main_v_text_box{margin-left: 100px;}
+    
+    /* CONTENTS 02 : NEW BRANDING AGENCY */
+    #con_2{height: 1100px;}
+    .branding_list{flex-wrap: wrap;}
+    .branding{width: 100%; height: 300px;}
+    .branding_icon{margin-top: 30px;}
+    
+    /* CONTENTS 04 : CREATIVE PROJECT */
+    .cr_list_wrap{height: 100%;}
+    .cr_list{flex-wrap: wrap;}
+    .cr_list > li{width: 100%; height: 300px;}
+
+}
+
+@media only screen and (max-width:550px) {
+    
+    html,body{font-size: 14px;}
+                
+    /* VISUAL */  
+    .main_v_tit, .main_v_tit .color_red{font-size: 2.75rem;}
+    .enter{display: block;}
+    
+    .main_v_text_box{margin-left: 50px;}
+    .main_v_logo {width: 80%;}
+    
+    .main_v_paging_wrap{right: 30px; bottom: 70px;}
+    #main_v_paging_num{font-size: 10.5rem;}
+    #main_v_paging_list{bottom: -25px;}
+    
+    /* CONTENTS 03 : BUSINESS AREA */
+    .ba_list_wrap{height: 100%;}
+    .ba_list > li {width: 100%;}
+    
+    /* CONTENTS 04 : CREATIVE PROJECT */
+    .ysor_list_wrap{height: 890px;}
+    .ysor_list_area{height: 100%;}
+    .ysor_list{height: 100%;}
+    .ysor_list > li{width: 48%;}
+    .btn_vtc_prev{top: 290px;}
+    .btn_vtc_next{bottom: 224px;}
+    
+    .main_con_title{font-size: 2.2rem}
+    .ysor_list > li > img{width: 60%;}
+    
+}
+@media only screen and (max-width:400px) {
+        
+    /* CONTENTS 01 : WHAT WE DO */
+    .wwd_bg.ibx {left: 30px; right: 30px; top: 30px; bottom: 30px;}    
+
+    
+}
